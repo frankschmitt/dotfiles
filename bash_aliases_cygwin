@@ -1,0 +1,8 @@
+.bash_aliases_cygwin
+
+# FS clipboard support
+alias putclip="cat > /dev/clipboard"
+alias getclip="cat /dev/clipboard"
+alias pbcopy="putclip"
+alias pbpaste="getclip"
+alias open="cygstart"
