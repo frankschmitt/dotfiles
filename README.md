@@ -1,0 +1,20 @@
+# README #
+
+### What is this repository for? ###
+
+* Quick summary
+Collection of dotfiles for easy sharing of custom configurations
+* Version
+1.0
+
+### How do I get set up? ###
+Just clone the repository. Depending on the application and your OS, you might want to add symlinks in your home directory / copy the files there, e.g.
+ln -s <path_to_repo>/bashrc_macosx ~/.bashrc
+
+### Contribution guidelines ###
+None.
+
+### Who do I talk to? ###
+
+* Repo owner 
+Frank Schmitt 
