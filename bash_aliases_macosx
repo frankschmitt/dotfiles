@@ -1,0 +1,5 @@
+# always start MacVim in terminal instead of in separate window
+alias 'mvim=mvim -v' 
+#enable colourized output
+alias 'ls=ls -G'
+
