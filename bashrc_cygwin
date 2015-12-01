@@ -189,3 +189,6 @@ fi
 # }
 # 
 # alias cd=cd_func
+
+
+export PATH=~/bin:$PATH

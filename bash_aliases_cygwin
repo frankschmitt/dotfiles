@@ -7,3 +7,7 @@ alias pbcopy="putclip"
 alias pbpaste="getclip"
 alias open="cygstart"
 alias start="cygstart"
+
+
+# Vim
+alias gvim="C:/Program\ Files\ \(x86\)/Vim/vim74/gvim.exe"
