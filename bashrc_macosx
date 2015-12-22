@@ -31,6 +31,7 @@ alias "factor=/Applications/Programming/factor/factor"
 alias julia=/Applications/Programming/Julia-0.3.6.app/Contents/Resources/julia/bin/julia
 
 # Nethack
-NETHACKOPTIONS="number_pad:1"
+NETHACKOPTIONS="number_pad:1,!autopickup"
 export NETHACKOPTIONS
 #NETHACKOPTIONS="autoquiver,!autopickup,name:Blue Meanie,fruit:papaya"
+export JAVA_HOME="$(/usr/libexec/java_home -v 1.8)"
