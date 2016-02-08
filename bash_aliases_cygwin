@@ -11,3 +11,6 @@ alias start="cygstart"
 
 # Vim
 alias gvim="C:/Program\ Files\ \(x86\)/Vim/vim74/gvim.exe"
+
+# Ensure ls uses colours
+alias ls="ls --color=auto"
