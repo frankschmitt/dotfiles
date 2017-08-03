@@ -1,0 +1,37 @@
+PATH=/usr/local/opt/ruby/bin:$PATH
+# use PostgreSQL binaries from Enterprise DB install instead of Apple-
+# provided ones
+PATH=/Library/PostgreSQL/9.2/bin:$PATH
+# put own binaries into path
+PATH=~/bin:$PATH
+
+# purescript binaries
+PATH=~/Library/Haskell/ghc-7.6.3/lib/purescript-0.6.9.5/bin:$PATH
+
+export PATH
+
+# increase limit from 256 to 4096 for Riak
+ulimit -n 4096
+
+
+# OPAM configuration
+# . /Users/frank/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true
+# eval `opam config env`
+
+export HBASE_HOME=/usr/local/Cellar/hbase/0.94.15
+
+# use separate aliases fils
+if [ -f "${HOME}/.bash_aliases" ]; then
+  source "${HOME}/.bash_aliases" 
+fi
+
+# environment variables for factor
+export FACTOR_ROOTS=~/src/seven_more_languages_in_seven_weeks/2_factor/examples
+alias "factor=/Applications/Programming/factor/factor"
+alias julia=/Applications/Programming/Julia-0.3.6.app/Contents/Resources/julia/bin/julia
+
+# Nethack
+NETHACKOPTIONS="number_pad:1,!autopickup"
+export NETHACKOPTIONS
+#NETHACKOPTIONS="autoquiver,!autopickup,name:Blue Meanie,fruit:papaya"
+export JAVA_HOME="$(/usr/libexec/java_home -v 1.8)"
