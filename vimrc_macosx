@@ -1,0 +1,47 @@
+set term=builtin_ansi
+
+if $TMUX == ''
+ set clipboard+=unnamed
+endif
+
+execute pathogen#infect()
+filetype plugin indent on
+syntax on
+
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
+set expandtab
+
+set visualbell
+
+set number
+
+" show those darn non-breaking spaces &nbsp; aka U+00A0
+set list
+set listchars=nbsp:.
+
+" search case-insensitive
+set ignorecase
+
+" --------------------------------
+" vim-airline configuration
+" --------------------------------
+"   show buffer list
+" let g:airline#extensions#tabline#enabled = 1
+
+" ensure airline is properly loaded 
+set laststatus=2
+" prevent long pause when exiting insert mode
+set timeoutlen=50
+
+" automatically change to the directory of the current file
+set autochdir
+
+" plugins
+call plug#begin('~/.vim/plugged')
+Plug 'elmcast/elm-vim'
+call plug#end()
+
+" Elm stuff
+let g:elm_format_autosave = 1

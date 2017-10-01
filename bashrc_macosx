@@ -8,6 +8,9 @@ PATH=~/bin:$PATH
 # purescript binaries
 PATH=~/Library/Haskell/ghc-7.6.3/lib/purescript-0.6.9.5/bin:$PATH
 
+# Necessary for Selenium WebDriver
+PATH=/Applications/Web/Firefox.app/Contents/MacOS/:$PATH
+
 export PATH
 
 # increase limit from 256 to 4096 for Riak
@@ -35,3 +38,11 @@ NETHACKOPTIONS="number_pad:1,!autopickup"
 export NETHACKOPTIONS
 #NETHACKOPTIONS="autoquiver,!autopickup,name:Blue Meanie,fruit:papaya"
 export JAVA_HOME="$(/usr/libexec/java_home -v 1.8)"
+
+
+# Haskell - use Stack
+alias ghci="stack ghci"
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/Users/frank/.sdkman"
+[[ -s "/Users/frank/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/frank/.sdkman/bin/sdkman-init.sh"
