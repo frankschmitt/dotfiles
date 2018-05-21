@@ -45,3 +45,11 @@ call plug#end()
 
 " Elm stuff
 let g:elm_format_autosave = 1
+
+
+" Curry stuff
+" 2018-02-17 use Haskell mode for now
+au BufNewFile,BufRead *.curry		setf haskell
+
+" ASCIIdoc stuff
+au BufNewFile,BufRead *.adoc		setf asciidoc
