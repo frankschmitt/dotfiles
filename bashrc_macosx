@@ -46,9 +46,11 @@ export NETHACKOPTIONS
 #NETHACKOPTIONS="autoquiver,!autopickup,name:Blue Meanie,fruit:papaya"
 export JAVA_HOME="$(/usr/libexec/java_home -v 1.8)"
 
-
 # Haskell - use Stack
 alias ghci="stack ghci"
+
+# Elixir: history in iex
+export ERL_AFLAGS="-kernel shell_history enabled"
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/Users/frank/.sdkman"
