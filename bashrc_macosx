@@ -4,12 +4,20 @@ PATH=/usr/local/opt/ruby/bin:$PATH
 PATH=/Library/PostgreSQL/9.2/bin:$PATH
 # put own binaries into path
 PATH=~/bin:$PATH
+# installation path used by Stack (e.g. for frank)
+PATH=~/.local/bin:$PATH
 
 # purescript binaries
 PATH=~/Library/Haskell/ghc-7.6.3/lib/purescript-0.6.9.5/bin:$PATH
 
 # Necessary for Selenium WebDriver
-PATH=/Applications/Web/Firefox.app/Contents/MacOS/:$PATH
+PATH=/Applications/Web/Firefox.app/Contents/MacOS:$PATH
+
+# MacTex distro
+PATH=/usr/local/texlive/2017/bin/x86_64-darwin:$PATH
+
+# KICS2 (Curry environment)
+PATH=/Users/frank/src/3rd_party/kics2-0.6.0/bin:$PATH
 
 export PATH
 
@@ -18,8 +26,8 @@ ulimit -n 4096
 
 
 # OPAM configuration
-# . /Users/frank/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true
-# eval `opam config env`
+. /Users/frank/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true
+eval `opam config env`
 
 export HBASE_HOME=/usr/local/Cellar/hbase/0.94.15
 
@@ -30,8 +38,7 @@ fi
 
 # environment variables for factor
 export FACTOR_ROOTS=~/src/seven_more_languages_in_seven_weeks/2_factor/examples
-alias "factor=/Applications/Programming/factor/factor"
-alias julia=/Applications/Programming/Julia-0.3.6.app/Contents/Resources/julia/bin/julia
+#alias "factor=/Applications/Programming/factor/factor"
 
 # Nethack
 NETHACKOPTIONS="number_pad:1,!autopickup"
