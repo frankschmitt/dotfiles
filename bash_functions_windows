@@ -1,0 +1,19 @@
+# set git base dir (location depends on the computer we're on, so
+#   check a few known candidates)
+GITDIR=""
+if [ -d "/c/QR/data/schmitf2/git" ]; then
+	GITDIR=/c/QR/data/schmitf2/git 
+elif [ -d "/c/Users/schmitf2/git" ]; then
+	GITDIR=/c/Users/schmitf2/git
+elif [ -d "/e/data/schmitf2/git" ]; then
+	GITDIR=/e/data/schmitf2/git
+fi
+
+export GITDIR
+
+gtwc() { cd $GITDIR; } 
+
+
+lmn() { cd $GITDIR/lmn; }
+
+damas() { cd $GITDIR/idrm/DAMAS; }
