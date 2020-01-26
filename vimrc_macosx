@@ -31,12 +31,17 @@ set ignorecase
 " let g:airline#extensions#tabline#enabled = 1
 
 " ensure airline is properly loaded 
+" always show status line (even if only one file is opened)
 set laststatus=2
 " prevent long pause when exiting insert mode
 set timeoutlen=50
 
 " automatically change to the directory of the current file
-set autochdir
+" 2019-07-22 disabled so that elm-format works correctly
+set noautochdir
+
+" display command line's tab completion as a menu
+set wildmenu
 
 " plugins
 call plug#begin('~/.vim/plugged')
@@ -53,3 +58,6 @@ au BufNewFile,BufRead *.curry		setf haskell
 
 " ASCIIdoc stuff
 au BufNewFile,BufRead *.adoc		setf asciidoc
+
+" show folds up to lvl 2 in separate column
+set foldcolumn=2

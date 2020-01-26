@@ -52,6 +52,12 @@ alias ghci="stack ghci"
 # Elixir: history in iex
 export ERL_AFLAGS="-kernel shell_history enabled"
 
+# R
+export PATH=/Library/Frameworks/R.framework/Resources/bin:$PATH
+
+# load SSH key
+ssh-add -K /Users/frank/.ssh/id_rsa
+
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/Users/frank/.sdkman"
 [[ -s "/Users/frank/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/frank/.sdkman/bin/sdkman-init.sh"
