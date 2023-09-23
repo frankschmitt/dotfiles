@@ -43,10 +43,11 @@ set noautochdir
 " display command line's tab completion as a menu
 set wildmenu
 
-" plugins
+" plugins, using vim-plug
 "call plug#begin('~/.vim/plugged')
 "Plug 'elmcast/elm-vim'
 "call plug#end()
+"Plug 'elixir-editors/vim-elixir'
 
 " Elm stuff
 let g:elm_format_autosave = 1
